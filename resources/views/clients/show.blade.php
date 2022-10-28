@@ -67,17 +67,14 @@
 <!-- Delete Modal -->
 <div id="deleteModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
-
       <form class="modal-content" method="post" action="{{ route('destroyClient', $client->slug) }}">
         {{ csrf_field() }}
         {{ method_field('DELETE') }}
-
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
           <h4 class="modal-title">Delete {{ $client->company }}</h4>
         </div>
         <div class="modal-body">
-
             <div class='form-group'>
                 <label>Are you sure you want to delete this client?
                     <select name="delete" class="form-control">
@@ -86,7 +83,6 @@
                     </select>
                 </label>
             </div>
-
         </div>
         <div class="modal-footer">
             <div class='pull-left'>

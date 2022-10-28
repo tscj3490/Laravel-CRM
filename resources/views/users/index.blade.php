@@ -51,7 +51,7 @@
                 </div>
             </div>
         </form>
-<br/>
+        <br/>
         <div class="text-center">
             Showing {{ $users->total() }} results
         </div>
@@ -93,9 +93,8 @@
         </table>
     </div>
 
-        <div class="text-center">
-                {{ $users->links() }}
-        </div>
-
+    <div class="text-center">
+            {{ $users->links() }}
+    </div>
 
 @endsection

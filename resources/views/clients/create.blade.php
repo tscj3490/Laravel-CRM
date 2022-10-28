@@ -11,9 +11,7 @@
 
 
 <div class="container-fluid main-container">
-
     <div class="row">
-        
         @include('layouts.errors')
 
         <form method="post" action="{{ route('createClient') }}" class="form col-md-4 col-md-offset-4" enctype="multipart/form-data">

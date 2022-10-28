@@ -89,9 +89,8 @@
         </table>
     </div>
 
-        <div class="text-center">
-                {{ $clients->links() }}
-        </div>
-
+    <div class="text-center">
+            {{ $clients->links() }}
+    </div>
 
 @endsection

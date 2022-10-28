@@ -19,16 +19,16 @@ $factory->define(App\Client::class, function (Faker $faker) {
         'slug' => strtolower(str_slug($company, '-')),
         'first_name' => $faker->firstName,
         'last_name' => $faker->lastName,
-        'user_created' => function() {
-            return factory(App\User::class)->create()->id;
-        },
-        'company' => $company,
         'contact_number' => $faker->phonenumber,
         'building_number' => $faker->buildingnumber,
         'city' => $faker->city,
         'postcode' => $faker->postcode,
         'email' => $faker->unique()->safeEmail,
         'street_name' => $faker->StreetAddress,
+        'company' => $company,
+        'user_created' => function() {
+            return factory(App\User::class)->create()->id;
+        },
     ];
 });
 

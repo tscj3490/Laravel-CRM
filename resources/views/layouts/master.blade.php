@@ -39,13 +39,10 @@
                                     @yield('breadcrumbs')>
                                 </ol>
                             </div>
-                            
                             <br>
-
                             @include('layouts.flash')
                             <br>
                             @yield('content')
-
                             @include('layouts.footer')
                         </div>
                     </div>
@@ -53,10 +50,8 @@
                 </div>
             </div>
             <!-- /#page-content-wrapper -->
-
         </div>
         <!-- /#wrapper -->
-
     @section('scripts')
         <script src="{{ asset('js/app.js') }}" type="text/javascript"></script>
     @show
